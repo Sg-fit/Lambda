@@ -1,4 +1,3 @@
-package Source;
 // Simplified version of the WPILib Command lifecycle.
 public abstract class Command {
     public void initialize() {}

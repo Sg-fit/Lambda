@@ -1,4 +1,3 @@
-package Source;
 // Each update() call represents one simulated step, not elapsed real time.
 public class Elevator {
     private final Motor motor = new Motor();

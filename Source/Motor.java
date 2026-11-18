@@ -1,4 +1,3 @@
-package Source;
 public class Motor {
     private double speed = 0.0;
 

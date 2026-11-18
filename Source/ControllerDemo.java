@@ -1,4 +1,3 @@
-package Source;
 import java.util.Scanner;
 
 public class ControllerDemo {
@@ -6,6 +5,12 @@ public class ControllerDemo {
         Motor motor = new Motor();
         Elevator elevator = new Elevator();
         FakeController controller = new FakeController();
+
+        Command spinMotor = new RunCommand(() -> motor.setSpeed(0.75));
+        Command stopMotor = new RunCommand(motor::stop);
+
+        spinMotor.execute();
+        stopMotor.execute();
 
         // PART 1 — Simple commands and bindings
         // TODO: Bind A to a RunCommand that sets motor speed to 0.75.

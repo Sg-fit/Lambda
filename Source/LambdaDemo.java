@@ -1,11 +1,10 @@
-package Source;
 public class LambdaDemo {
 
     public static void main(String[] args) {
         // Once you write Runnable.java and DoubleSupplier.java,
         // uncomment this example and run it.
 
-        /*
+        
         Runnable greeting = () -> {
             System.out.println("Hello!");
             System.out.println("Welcome to robotics!");
@@ -18,7 +17,11 @@ public class LambdaDemo {
         // TODO: Make a DoubleSupplier that returns Math.random() * 100.
         // TODO: Create a Runnable that prints a short countdown.
         // Try a method reference using LambdaDemo::sayHello.
-        */
+        
+        Runnable first = () -> LambdaDemo.sayHello();
+        Runnable second = LambdaDemo::sayHello;
+        first.run();
+        second.run();
     }
 
     public static void sayHello() {

@@ -1,4 +1,3 @@
-package Source;
 public class MoveElevatorCommand extends Command {
     private final Elevator elevator;
     private final double targetHeight;
